@@ -1,0 +1,15 @@
+<section class="container highlights">
+  <header>
+    <span>Resumo profissional</span>
+    <h2>Áreas que conectam meu perfil</h2>
+  </header>
+
+  <ul>
+    @for(item of arrayHighlights(); track item){
+    <li>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.text }}</p>
+    </li>
+    }
+  </ul>
+</section>
