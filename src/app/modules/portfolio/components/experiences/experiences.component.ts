@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 
-// Interface
+//interface
 import { IExperiences } from '../../interface/IExperiences.interface';
 
 @Component({
@@ -17,7 +17,7 @@ export class ExperiencesComponent {
         strong: 'Trainee Desktop',
         p: 'Asimov JR / UNIFEI | Abr 2026 - Atual',
       },
-      text: '<p>Atuação como Trainee de Desenvolvimento Desktop na empresa júnior Asimov JR, vinculada à Universidade Federal de Itajubá (UNIFEI).</p><p>Desenvolvimento de aplicações desktop, colaborando em projetos reais com foco em qualidade de código e boas práticas de engenharia de software.</p>',
+      text: '<p>Atuação como Trainee de Desenvolvimento Desktop na Asimov JR, empresa júnior da Universidade Federal de Itajubá (UNIFEI).</p><p>Desenvolvimento de aplicações desktop, colaborando em projetos reais com foco em qualidade de código e boas práticas de engenharia de software.</p>',
     },
     {
       summary: {
