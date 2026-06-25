@@ -23,19 +23,33 @@
 
     li {
       flex: 20%;
-      width: 160px;
-      height: 160px;
+      width: 180px;
+      height: 180px;
 
       button {
         width: 100%;
         height: 100%;
         cursor: pointer;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 18px;
+
         background: var(--black-010);
         border: 2px solid var(--primary);
-        border-radius: 7px;
-        transition: 0.5s;
+        border-radius: 12px;
+        transition: 0.4s;
+
+        span {
+          color: var(--white);
+          font-size: 14px;
+          font-weight: 700;
+        }
+
         &:hover {
+          transform: translateY(-4px);
           background: var(--primary);
         }
       }
