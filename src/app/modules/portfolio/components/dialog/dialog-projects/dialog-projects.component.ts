@@ -5,7 +5,7 @@ import {
   MatDialogRef,
 } from '@angular/material/dialog';
 
-// Interface
+//interface
 import { IProjects } from '../../../interface/IProjects.interface';
 
 @Component({
