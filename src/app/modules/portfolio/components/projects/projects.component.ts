@@ -28,7 +28,7 @@ export class ProjectsComponent {
       alt: 'Projeto currículo de Isadora Franco',
       title: 'Currículo digital',
       summary:
-        'Página responsiva criada para apresentar formação, experiências e habilidades técnicas de forma organizada.',
+        'Página responsiva criada para apresentar formação, experiências, habilidades e interesses técnicos.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       with: '180px',
       height: '84px',
