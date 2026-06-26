@@ -1,15 +1,15 @@
 import { Component, inject, signal } from '@angular/core';
 
-// Interface
+//interface
 import { IProjects } from '../../interface/IProjects.interface';
 
-// Material
+//material
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
-// Enum
+//enum
 import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
 
-// Dialog
+//dialog
 import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
 
 @Component({
@@ -25,8 +25,11 @@ export class ProjectsComponent {
   public arrayProjects = signal<IProjects[]>([
     {
       src: 'assets/img/projects/curriculo-card.png',
-      alt: 'Projeto Currículo — Isadora Franco',
-      title: 'Projeto Currículo',
+      alt: 'Projeto currículo de Isadora Franco',
+      title: 'Currículo digital',
+      summary:
+        'Página responsiva criada para apresentar formação, experiências e habilidades técnicas de forma organizada.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       with: '180px',
       height: '84px',
       description:

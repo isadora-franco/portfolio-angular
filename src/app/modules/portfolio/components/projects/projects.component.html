@@ -1,18 +1,28 @@
 <div class="container">
   <h2>Projetos desenvolvidos</h2>
 
-  <ul>
-    @for(item of arrayProjects(); track item){
+  <ul class="projects-list">
+    @for(item of arrayProjects(); track item.title){
     <li>
-      <button (click)="openDialog(item)">
-        <img
-          [src]="item.src"
-          [alt]="item.alt"
-          [attr.width]="item.with"
-          [attr.height]="item.height"
-          loading="lazy"
-        />
-        <span>{{ item.title }}</span>
+      <button
+        class="project-card"
+        type="button"
+        (click)="openDialog(item)"
+        [attr.aria-label]="'Abrir detalhes do projeto ' + item.title"
+      >
+        <span class="project-card__tag">Projeto desenvolvido</span>
+
+        <strong>{{ item.title }}</strong>
+
+        <p>{{ item.summary }}</p>
+
+        <div class="project-card__technologies">
+          @for(technology of item.technologies; track technology){
+          <span>{{ technology }}</span>
+          }
+        </div>
+
+        <span class="project-card__footer">Ver detalhes</span>
       </button>
     </li>
     }
